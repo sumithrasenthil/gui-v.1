@@ -32,8 +32,8 @@ class VideoWindow(QtWidgets.QMainWindow):
         self.title = "CAAS"
         self.top = 0
         self.left = 100
-        self.width = 1280
-        self.height = 1024
+        self.width = 720
+        self.height = 480
         self.Iconimage = "icon.png"
 
         self.InitWindow()
@@ -287,8 +287,8 @@ class Window1(QDialog):
 
         self.top = 0
         self.left = 100
-        self.width = 1280
-        self.height = 1024
+        self.width = 720
+        self.height = 480
         self.InitUI()
         # player.resize(2100, 3470)
 
@@ -402,7 +402,7 @@ if __name__ == '__main__':
     player = VideoWindow()
     # amount=Window1()
     # amount.resize(2100,3470)
-    player.resize(1280, 1024)
+    player.resize(720, 480)
     player.show()
     # amount.show()
     sys.exit(app.exec_())
