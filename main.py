@@ -31,9 +31,9 @@ class VideoWindow(QtWidgets.QMainWindow):
 
         self.title = "CAAS"
         self.top = 0
-        self.left = 100
-        self.width = 720
-        self.height = 480
+        self.left = 0
+        self.width = 1400
+        self.height = 1000
         self.Iconimage = "icon.png"
 
         self.InitWindow()
@@ -52,17 +52,19 @@ class VideoWindow(QtWidgets.QMainWindow):
         #Heading of the window .
         self.label = QtWidgets.QLabel(self)
         self.label.setText("<h1>CHARGEPAY WELCOMES YOU</h2>")
-        self.label.setGeometry(QRect(750, -15, 525, 145))
+        self.label.setGeometry(QRect(350, 10, 525, 145))
         self.label.setStyleSheet('color:darkblack')
 
         # welcome user heading
+        
         self.label = QtWidgets.QLabel(self)
         self.label.setText("<h2>Welcome User</h3>")
-        self.label.setGeometry(QRect(1550, 110, 525, 145))
+        self.label.setGeometry(QRect(950, 110, 525, 145))
         self.label.setStyleSheet('color:darkred')
+        self.label.setFont(QtGui.QFont("Bitter"))
         self.label2 = QLabel(self)
         self.label2.setPixmap(QtGui.QPixmap('user2.png'))
-        self.label2.setGeometry(1500,159, 40, 40)
+        self.label2.setGeometry(900,159, 40, 40)
         self.label3 = QLabel(self)
 
 
@@ -71,31 +73,31 @@ class VideoWindow(QtWidgets.QMainWindow):
         button1 = QPushButton(" SOC ", self)
         button1.setStyleSheet('QPushButton {background-color: black ,color: darkred;}')
 
-        button1.setGeometry(QRect(1540, 270, 100, 45))
+        button1.setGeometry(QRect(940, 270, 100, 45))
         button1.resize(50, 35)
         button1.setToolTip("STATE OF CHARGE")
 
         # soc output
         button1 = QPushButton("  ", self)
-        button1.setGeometry(QRect(1670, 270, 100, 45))
+        button1.setGeometry(QRect(1070, 270, 100, 45))
         button1.resize(60, 35)
         button1.setToolTip("STATE OF CHARGE")
 
         # required units
         button1 = QPushButton(" UNITS ", self)
 
-        button1.setGeometry(QRect(1540, 370, 100, 45))
+        button1.setGeometry(QRect(940, 370, 100, 45))
         button1.resize(50, 35)
         button1.setToolTip("Units needed for the user ")
 
         # input fields for charging
         self.textbox = QLineEdit(self)
-        self.textbox.setGeometry(QRect(1670, 370, 100, 45))
+        self.textbox.setGeometry(QRect(1070, 370, 100, 45))
         self.textbox.resize(60, 35)
 
         # Create a button in the window
         self.button2 = QPushButton("Charge  ", self)
-        self.button2.setGeometry(QRect(1580, 470, 100, 45))
+        self.button2.setGeometry(QRect(980, 470, 100, 45))
         self.button2.setStyleSheet('color:darkred')
         self.button2.setIcon(QtGui.QIcon("icon.png"))
         self.button2.setIconSize(QtCore.QSize(30, 30))
@@ -110,29 +112,29 @@ class VideoWindow(QtWidgets.QMainWindow):
         #contact
         self.label1 = QtWidgets.QLabel(self)
         self.label1.setText("<h3>Contact</h2>")
-        self.label1.setGeometry(QRect(1540, 640, 400, 45))
+        self.label1.setGeometry(QRect(940, 640, 400, 45))
         self.label1.setStyleSheet('color:darkred')
         self.label2 = QLabel(self)
         self.label2.setPixmap(QtGui.QPixmap('contact1.png'))
-        self.label2.setGeometry(1510, 640, 40, 40)
+        self.label2.setGeometry(910, 640, 40, 40)
         # self.label3 = QLabel(self)
         # self.label3.setPixmap(QtGui.QPixmap('line.png'))
         # self.label3.setGeometry(540, 375, 200, 10)
         self.label1 = QtWidgets.QLabel(self)
         self.label1.setText("<h4>xyz@gmail.com</h4>")
-        self.label1.setGeometry(QRect(1585, 700, 400, 45))
+        self.label1.setGeometry(QRect(985, 700, 400, 45))
         self.label2 = QLabel(self) # self.setGeometry(self.left, self.top, self.width, self.height)
 
         self.label2.setPixmap(QtGui.QPixmap('gmail.png'))
-        self.label2.setGeometry(1555, 705, 35, 35)
+        self.label2.setGeometry(955, 705, 35, 35)
         self.label3 = QLabel(self)
 
         self.label1 = QtWidgets.QLabel(self)
         self.label1.setText("<h4>1223-3542-2334</h4>")
-        self.label1.setGeometry(QRect(1585, 735, 400, 45))
+        self.label1.setGeometry(QRect(985, 735, 400, 45))
         self.label2 = QLabel(self)
         self.label2.setPixmap(QtGui.QPixmap('phone2.png'))
-        self.label2.setGeometry(1560,740, 40, 40)
+        self.label2.setGeometry(960,740, 40, 40)
         self.label3 = QLabel(self)
 
 
@@ -141,11 +143,11 @@ class VideoWindow(QtWidgets.QMainWindow):
         # visit again..
         self.label1 = QtWidgets.QLabel(self)
         self.label1.setText("<h3> VISIT AGAIN !!!</h2>")
-        self.label1.setGeometry(QRect(1570, 810, 400, 45))
+        self.label1.setGeometry(QRect(970, 810, 400, 45))
         self.label1.setStyleSheet('color:darkred')
         self.label2 = QLabel(self)
         self.label2.setPixmap(QtGui.QPixmap('heart5.png'))
-        self.label2.setGeometry(1530, 810, 40, 40)
+        self.label2.setGeometry(930, 810, 40, 40)
 
         # self.label = QLabel(self)
         # self.label.setPixmap(QPixmap('payment5.jpg'))
@@ -212,7 +214,7 @@ class VideoWindow(QtWidgets.QMainWindow):
 
         # Create layouts to place inside widget
         controlLayout = QtWidgets.QHBoxLayout()
-        controlLayout.setContentsMargins(0, 0, 550, 0)
+        controlLayout.setContentsMargins(100, 200, 550, 200)
         controlLayout.addWidget(self.playButton)
         controlLayout.addWidget(self.positionSlider)
 
@@ -402,7 +404,8 @@ if __name__ == '__main__':
     player = VideoWindow()
     # amount=Window1()
     # amount.resize(2100,3470)
-    player.resize(720, 480)
+#     player.resize(1500, 1020)
     player.show()
     # amount.show()
     sys.exit(app.exec_())
+
